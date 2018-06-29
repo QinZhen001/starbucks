@@ -1,0 +1,214 @@
+.shopping-page .shopping-header {
+  padding: 30rpx 0;
+}
+.shopping-page .shopping-header image {
+  display: block;
+  margin: 0 auto;
+  height: 300rpx;
+  width: 452rpx;
+  border-radius: 20rpx;
+  box-shadow: 0 1px 20px #9C9C9C;
+}
+.shopping-page .pic-list-wrapper {
+  padding: 0 40rpx;
+  margin-bottom: 20rpx;
+}
+.shopping-page .pic-list-wrapper .pic-list {
+  height: 100rpx;
+  width: 100%;
+  white-space: nowrap;
+}
+.shopping-page .pic-list-wrapper .pic-list .picture-item {
+  display: inline-block;
+  position: relative;
+  margin-top: 5rpx;
+  margin-right: 34rpx;
+  height: 90rpx;
+  width: 145rpx;
+}
+.shopping-page .pic-list-wrapper .pic-list .picture-item:last-child {
+  margin-right: 0;
+}
+.shopping-page .pic-list-wrapper .pic-list .picture-item .img-pic {
+  position: relative;
+  height: 90rpx;
+  width: 145rpx;
+  border: 5rpx solid #fff;
+  border-radius: 10rpx;
+}
+.shopping-page .pic-list-wrapper .pic-list .picture-item .checked {
+  border: 5rpx solid #1eb275;
+}
+.shopping-page .pic-list-wrapper .pic-list .picture-item .img-checked {
+  position: absolute;
+  top: -10rpx;
+  right: -17rpx;
+  width: 34rpx;
+  height: 34rpx;
+}
+.shopping-page .text-choice {
+  font-size: 26rpx;
+  color: #494949;
+  padding-left: 30rpx;
+}
+.shopping-page .starbucks-list .starbuck-item {
+  margin: 22rpx 36rpx;
+  display: flex;
+  align-items: center;
+  font-size: 0;
+  height: 150rpx;
+  position: relative;
+}
+.shopping-page .starbucks-list .starbuck-item::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  border-bottom: 1rpx solid #e1e1e1;
+}
+.shopping-page .starbucks-list .starbuck-item:last-child {
+  margin-bottom: 0;
+}
+.shopping-page .starbucks-list .starbuck-item .img-drink {
+  margin-right: 32rpx;
+  flex: 0 0 120rpx;
+  width: 126rpx;
+  height: 126rpx;
+}
+.shopping-page .starbucks-list .starbuck-item .starbuck-text-wrapper {
+  flex: 1;
+}
+.shopping-page .starbucks-list .starbuck-item .starbuck-text-wrapper .description {
+  display: block;
+  font-size: 35rpx;
+}
+.shopping-page .starbucks-list .starbuck-item .starbuck-text-wrapper .price {
+  display: block;
+  margin-top: 10rpx;
+  font-size: 30rpx;
+}
+.shopping-page .starbucks-list .starbuck-item .cartcontrol-wrapper {
+  position: absolute;
+  top: 80rpx;
+  right: 20rpx;
+  height: 38rpx;
+}
+.shopping-page .starbucks-list .starbuck-item .cartcontrol-wrapper .btn-del {
+  display: inline-block;
+  width: 38rpx;
+  height: 38rpx;
+}
+.shopping-page .starbucks-list .starbuck-item .cartcontrol-wrapper .cartcontrol-num {
+  position: relative;
+  margin: 0 18rpx;
+  display: inline-block;
+  vertical-align: top;
+  height: 38rpx;
+  width: 54rpx;
+  line-height: 38rpx;
+  font-size: 36rpx;
+  text-align: center;
+}
+.shopping-page .starbucks-list .starbuck-item .cartcontrol-wrapper .cartcontrol-num::after {
+  position: absolute;
+  bottom: -3rpx;
+  left: 0;
+  right: 0;
+  width: 100%;
+  content: '';
+  border-bottom: 5rpx solid #299e6d;
+}
+.shopping-page .starbucks-list .starbuck-item .cartcontrol-wrapper .btn-add {
+  display: inline-block;
+  width: 38rpx;
+  height: 38rpx;
+}
+.shopping-page .starbucks-list .starbuck-item .cartcontrol-wrapper image {
+  position: relative;
+  width: 38rpx;
+  height: 38rpx;
+}
+.shopping-page .starbucks-list .starbuck-item .cartcontrol-wrapper image::before {
+  content: ' ';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+}
+.shopping-page .notice {
+  position: relative;
+  margin-bottom: 154rpx;
+  width: 100%;
+  height: 150rpx;
+}
+.shopping-page .notice .notice-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.shopping-page .notice .notice-content navigator {
+  font-size: 26rpx;
+  display: inline-block;
+  color: #299e6d;
+  text-decoration: underline;
+}
+.shopping-page .notice .notice-content .text-use {
+  margin-right: 40rpx;
+}
+.shopping-page .stick-footer {
+  position: fixed;
+  padding: 20rpx 30rpx;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  height: 154rpx;
+  background: #fff;
+  border-top: 1rpx solid #e1e1e1;
+  font-size: 0;
+}
+.shopping-page .stick-footer .footer-text {
+  flex: 1;
+}
+.shopping-page .stick-footer .footer-text .number {
+  display: block;
+  font-size: 25rpx;
+  color: #c3c3c3;
+}
+.shopping-page .stick-footer .footer-text .money-wrapper {
+  margin-top: 4rpx;
+  font-size: 0;
+  font-weight: 600;
+}
+.shopping-page .stick-footer .footer-text .money-wrapper .money-symbol {
+  vertical-align: text-bottom;
+  display: inline-block;
+  font-size: 24rpx;
+}
+.shopping-page .stick-footer .footer-text .money-wrapper .money-number {
+  display: inline-block;
+  text-indent: 2rpx;
+  font-size: 32rpx;
+}
+.shopping-page .stick-footer .btn-buy {
+  flex: 0 0 196rpx;
+  height: 68rpx;
+  background-color: #F7F7F7;
+  border-radius: 34rpx;
+  line-height: 68rpx;
+  color: #9C9C9C;
+}
+.shopping-page .stick-footer .btn-buy::after {
+  border: none;
+}
+.shopping-page .stick-footer .btn-buy-enabled {
+  color: #fff;
+  background-color: #4aa668;
+}

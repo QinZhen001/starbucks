@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/logs/logs",
+    "pages/shopping/shopping",
+    "pages/history/history",
+    "pages/know/know"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "星巴克用星说",
+    "navigationBarTextStyle": "black"
+  }
+}

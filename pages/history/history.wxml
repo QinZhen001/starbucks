@@ -1,0 +1,17 @@
+<view class="history-page">
+  <view wx:if="{{historyList.length>0}}" class="history-list">
+    <view class="history-item" wx:for="{{historyList}}">
+      <image src="{{item.url}}"></image>
+      <view class="item-content">
+        <text class="item-name">{{item.name}}</text>
+        <view class="item-text-under">
+          <text class="item-price" space="true" decode="true">单价:&nbsp;&nbsp;&nbsp;￥{{item.price}}</text>
+          <text class="ite-num" space="true" decode="true">购买数量:&nbsp;&nbsp;&nbsp;{{item.num}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view wx:else class="nothing">
+    <text class="nothing-text">当前还没有购买记录哦~</text>
+  </view>
+</view>

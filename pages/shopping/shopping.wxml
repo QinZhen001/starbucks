@@ -1,0 +1,79 @@
+<view class="shopping-page" xmlns:wx="http://www.w3.org/1999/xhtml">
+  <view class="shopping-header">
+    <image src="{{headerImg}}"></image>
+  </view>
+  <view class="pic-list-wrapper">
+    <scroll-view scroll-x="true" class="pic-list">
+      <view class="picture-item" wx:for="{{listPic}}" wx:key="{{item.page}}">
+        <image class="img-pic {{id === item.id?'checked':''}}"
+               data-id="{{item.id}}"
+               data-url="{{item.url}}"
+               src="{{item.url}}"
+               bindtap="clickPic"
+        >
+        </image>
+        <image class="img-checked"
+               wx:if="{{id===item.id}}"
+               data-id="{{item.id}}"
+               src="{{checkedImg}}"></image>
+      </view>
+    </scroll-view>
+  </view>
+
+  <text class="text-choice">选择商品</text>
+
+  <ul class="starbucks-list">
+    <li class="starbuck-item"
+        wx:for="{{starbucksList}}"
+        wx:key="{{index}}"
+        bindtap="checkDrink">
+      <image class="img-drink" src="{{item.url}}"></image>
+      <view class="starbuck-text-wrapper">
+        <text class="description">{{item.name}}</text>
+        <text class="price">￥{{item.price}}</text>
+      </view>
+
+      <view class="cartcontrol-wrapper">
+        <view wx:if="{{item.num>0}}"
+              class="btn-del"
+              data-index="{{index}}"
+              catchtap="delNum">
+          <image src="/images/jian.png"/>
+        </view>
+        <text wx:if="{{item.num>0}}" class="cartcontrol-num">{{starbucksList[index].num}}</text>
+        <view catchtap="addNum"
+              class="btn-add"
+              data-index="{{index}}">
+          <image wx:if="{{item.num==0}}" src="{{addImgSrc}}"/>
+          <image wx:else src="{{addImgActiveSrc}}"></image>
+        </view>
+
+      </view>
+    </li>
+  </ul>
+
+  <view class="notice">
+    <view class="notice-content">
+      <navigator hover-class="none" url="../../pages/know/know">
+        <text class="text-use">使用须知</text>
+      </navigator>
+      <navigator hover-class="none" url="../../pages/know/know">
+        <text class="text-know">隐私权条款</text>
+      </navigator>
+    </view>
+  </view>
+
+  <view class="stick-footer">
+    <view class="footer-text">
+      <text class="number">{{number}}份礼品</text>
+      <span class="money-wrapper">
+          <text class="money-symbol">￥</text>
+        <text class="money-number">{{money}}.00</text>
+      </span>
+    </view>
+    <button hover-class="none" class="btn-buy {{number>0?'btn-buy-enabled':''}}" disabled="{{btnBuyDisabled}}"
+            catchtap="onClickBuy">购买
+    </button>
+  </view>
+
+</view>

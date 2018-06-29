@@ -1,0 +1,203 @@
+@import "../../less/mixin.less";
+
+.shopping-page {
+  .shopping-header {
+    padding: ~"30rpx 0";
+    image {
+      display: block;
+      margin: 0 auto;
+      height: ~"300rpx";
+      width: ~"452rpx";
+      border-radius: ~"20rpx";
+      box-shadow: 0 1px 20px #9C9C9C;
+    }
+  }
+  .pic-list-wrapper {
+    padding: ~"0 40rpx";
+    margin-bottom: ~"20rpx";
+    .pic-list {
+      height: ~"100rpx";
+      width: 100%;
+      white-space: nowrap;
+      .picture-item {
+        display: inline-block;
+        position: relative;
+        margin-top: ~"5rpx";
+        margin-right: ~"34rpx";
+        height: ~"90rpx";
+        width: ~"145rpx";
+        &:last-child {
+          margin-right: 0;
+        }
+        .img-pic {
+          position: relative;
+          height: ~"90rpx";
+          width: ~"145rpx";
+          border: ~"5rpx solid #fff";
+          border-radius: ~"10rpx";
+        }
+        .checked {
+          border: ~"5rpx solid #1eb275";
+        }
+        .img-checked {
+          position: absolute;
+          top: ~"-10rpx";
+          right: ~"-17rpx";
+          width: ~"34rpx";
+          height: ~"34rpx";
+        }
+      }
+    }
+  }
+  .text-choice {
+    font-size: ~"26rpx";
+    color: #494949;
+    padding-left: ~"30rpx";
+  }
+  .starbucks-list {
+    .starbuck-item {
+      margin: ~"22rpx 36rpx";
+      display: flex;
+      align-items: center;
+      font-size: 0;
+      height: ~"150rpx";
+      .border-1rpx();
+      &:last-child {
+        margin-bottom: 0;
+      }
+      .img-drink {
+        margin-right: ~"32rpx";
+        flex: 0 0 ~"120rpx";
+        width: ~"126rpx";
+        height: ~"126rpx";
+      }
+      .starbuck-text-wrapper {
+        flex: 1;
+        .description {
+          display: block;
+          font-size: ~"35rpx";
+        }
+        .price {
+          display: block;
+          margin-top: ~"10rpx";
+          font-size: ~"30rpx";
+        }
+      }
+      .cartcontrol-wrapper {
+        position: absolute;
+        top: ~"80rpx";
+        right: ~"20rpx";
+        height: ~"38rpx";
+        .btn-del {
+          display: inline-block;
+          width: ~"38rpx";
+          height: ~"38rpx";
+        }
+        .cartcontrol-num {
+          position: relative;
+          margin: ~"0 18rpx";
+          display: inline-block;
+          vertical-align: top;
+          height: ~"38rpx";
+          width: ~"54rpx";
+          line-height: ~"38rpx";
+          font-size: ~"36rpx";
+          text-align: center;
+          &::after {
+            position: absolute;
+            bottom: ~"-3rpx";
+            left: 0;
+            right: 0;
+            width: 100%;
+            content: '';
+            border-bottom: ~"5rpx" solid #299e6d;
+          }
+        }
+        .btn-add {
+          display: inline-block;
+          width: ~"38rpx";
+          height: ~"38rpx";
+        }
+        image {
+          .extend-click();
+          width: ~"38rpx";
+          height: ~"38rpx";
+        }
+      }
+    }
+  }
+  .notice {
+    position: relative;
+    margin-bottom: ~"154rpx";
+    width: 100%;
+    height: ~"150rpx";
+    .notice-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      navigator {
+        font-size: ~"26rpx";
+        display: inline-block;
+        color: #299e6d;
+        text-decoration: underline;
+      }
+      .text-use {
+        margin-right: ~"40rpx";
+      }
+    }
+  }
+  .stick-footer {
+    position: fixed;
+    padding: ~"20rpx 30rpx";
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    height: ~"154rpx";
+    background: #fff;
+    border-top: ~"1rpx" solid #e1e1e1;
+    font-size: 0;
+    .footer-text {
+      flex: 1;
+      .number {
+        display: block;
+        font-size: ~"25rpx";
+        color: #c3c3c3;
+      }
+      .money-wrapper {
+        margin-top: ~"4rpx";
+        font-size: 0;
+        font-weight: 600;
+        .money-symbol {
+          vertical-align: text-bottom;
+          display: inline-block;
+          font-size: ~"24rpx";
+        }
+        .money-number {
+          display: inline-block;
+          text-indent: ~"2rpx";
+          font-size: ~"32rpx";
+        }
+      }
+    }
+    .btn-buy {
+      flex: ~"0 0 196rpx";
+      height: ~"68rpx";
+      background-color: #F7F7F7;
+      border-radius: ~"34rpx";
+      line-height: ~"68rpx";
+      color: #9C9C9C;
+      &::after {
+        border: none;
+      }
+    }
+    .btn-buy-enabled {
+      color: #fff;
+      background-color: #4aa668;
+    }
+  }
+}

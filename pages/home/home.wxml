@@ -1,0 +1,42 @@
+<scroll-view class="home-page" scroll-y="true">
+  <swiper class="swiper"
+          indicator-dots="true"
+          autoplay="true"
+          circular="true">
+    <block wx:for="{{sliders}}" wx:key="{{index}}">
+      <swiper-item>
+        <image src="{{item}}" bindtap="navigateToShopping" data-page="{{index}}" bindtap="clickImg"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="btn-wrapper">
+    <button class="btn-home-page" bindtap="clickBtn">
+      <image class="btn-image" src="{{newImage}}"/>
+      <text>{{newTitle}}</text>
+    </button>
+  </view>
+  <text class="title">咖啡+祝福 即刻表心意</text>
+  <view class="home-list">
+    <view class="list-item"
+          catchtap="clickItem"
+          wx:for="{{starbuckList}}"
+          data-title="{{item.title}}"
+          data-page="{{item.page}}"
+          wx:key="{{item.title}}">
+      <image src="{{item.img}}"></image>
+      <text>{{item.title}}</text>
+    </view>
+  </view>
+  <view class="home-page-footer">
+    <view class="footer-cole">
+      <navigator hover-class="none" class="footer-nav" url="../../pages/history/history">
+        <image src="{{navImage}}"></image>
+      </navigator>
+    </view>
+    <view class="footer-text">
+      <navigator hover-class="none" url="../../pages/history/history">
+        <text>购买历史</text>
+      </navigator>
+    </view>
+  </view>
+</scroll-view>

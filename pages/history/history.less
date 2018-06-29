@@ -1,0 +1,57 @@
+@import '../../less/mixin.less';
+
+.history-page {
+  .history-list {
+    margin: ~"30rpx 36rpx 0 36rpx";
+    .history-item {
+      padding-bottom: ~"12rpx";
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: ~"146rpx";
+      .border-1rpx();
+      image {
+        margin-right: ~"50rpx";
+        flex: ~"0 0 120rpx";
+        width: ~"120rpx";
+        height: ~"146rpx";
+      }
+      .item-content {
+        flex: 1;
+        .item-name {
+          display: block;
+          font-size: ~"35rpx";
+        }
+        .item-text-under {
+          position: relative;
+          margin-top: ~"18rpx";
+          height: ~"40rpx";
+          width: 100%;
+          .item-price {
+            display: inline-block;
+            height: ~"40rpx";
+            line-height: ~"40rpx";
+            font-size: ~"26rpx";
+          }
+          .ite-num {
+            margin-left: ~"100rpx";
+            display: inline-block;
+            height: ~"40rpx";
+            line-height: ~"40rpx";
+            font-size: ~"26rpx";
+          }
+        }
+      }
+    }
+  }
+  .nothing {
+    position: fixed;
+    left: 50%;
+    top: 30%;
+    transform: translateX(-50%);
+    .nothing-text {
+      color: #9C9C9C;
+      white-space: nowrap;
+    }
+  }
+}
