@@ -5,11 +5,11 @@
 
 
 <div align="center">
-<img src="https://github.com/QinZhen001/my-movie/blob/master/screenshot/screenshot1.png" height="450" width="270" >
+<img src="https://github.com/QinZhen001/starbucks/blob/master/screenshot/screenshot1.png" height="450" width="270" >
 
-<img src="https://github.com/QinZhen001/my-movie/blob/master/screenshot/screenshot2.png" height="450" width="270" >
+<img src="https://github.com/QinZhen001/starbucks/blob/master/screenshot/screenshot2.png" height="450" width="270" >
 
-<img src="https://github.com/QinZhen001/my-movie/blob/master/screenshot/screenshot4.png" height="450" width="270" >
+<img src="https://github.com/QinZhen001/starbucks/blob/master/screenshot/screenshot3.png" height="450" width="270" >
 </div>
 
 
@@ -17,7 +17,7 @@
 
 <div align="center">
 
-![小程序演示](https://github.com/QinZhen001/my-movie/blob/master/screenshot/GIF.gif)
+![小程序演示](https://github.com/QinZhen001/starbucks/blob/master/screenshot/GIF.gif)
 
 
 <div/>
