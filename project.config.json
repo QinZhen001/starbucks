@@ -9,8 +9,8 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "1.9.94",
-	"appid": "wx501b944fa343eda0",
-	"projectname": "Starbucks1",
+	"appid": "touristappid",
+	"projectname": "sss",
 	"condition": {
 		"search": {
 			"current": -1,

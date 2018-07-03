@@ -1,9 +1,8 @@
 import {baseUrl} from './config'
 import {showModal} from '../utils/index'
-import util from '../utils/es6-promise.min'
 
 export function request(url, method = 'GET', data, header = {}) {
-    return new util.Promise((resolve, reject) => {
+    return new Promise((resolve, reject) => {
         wx.showLoading({title: '玩命加载中...'})
         wx.request({
             url: baseUrl + url,

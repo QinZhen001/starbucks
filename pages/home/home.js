@@ -11,9 +11,9 @@ Page({
         navImage: "/images/kele.png",
         starbuckList: []
     },
-    onLoad(){
+     async onLoad(){
         // 获取数据
-        request('/homelist').then(res => {
+        await request('/homelist').then(res => {
             // console.log(res.data.list)
             this.setData({
                 starbuckList: res.data.list
